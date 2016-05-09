@@ -23,5 +23,4 @@
 
     <include layout="@layout/content_show_profile" />
 
-
 </android.support.design.widget.CoordinatorLayout>

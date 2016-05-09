@@ -143,9 +143,9 @@ public class upload extends AppCompatActivity{
         private final Messenger mMessenger = new Messenger(mIncomingHandler);
 
         @Override
-        public void onCreate(Bundle savedInstanceState) {
+        protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setTitle("CONNECT");
+            //setTitle("CONNECT");
             setContentView(R.layout.activity_upload);
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
             toolbar.setTitle("Connect");
