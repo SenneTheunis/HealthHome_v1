@@ -11,10 +11,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class Main extends AppCompatActivity implements View.OnClickListener {
 
     Button bResults, bProfile, bConnect, bLogout;
+    TextView variable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +27,7 @@ public class Main extends AppCompatActivity implements View.OnClickListener {
         toolbar.setTitle("Home");
         setSupportActionBar(toolbar);
 
+        variable = (TextView) findViewById(R.id.variable);
         bResults = (Button) findViewById(R.id.bResults);
         bProfile = (Button) findViewById(R.id.bProfile);
         bConnect = (Button) findViewById(R.id.bConnect);
@@ -32,6 +36,14 @@ public class Main extends AppCompatActivity implements View.OnClickListener {
         bProfile.setOnClickListener(this);
         bConnect.setOnClickListener(this);
         bLogout.setOnClickListener(this);
+
+
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            String userName = extras.getString("USERNAME");
+            variable.setText(userName + "!");
+            //Toast.makeText(Main.this, userName, Toast.LENGTH_LONG).show();
+        }
 
     }
 

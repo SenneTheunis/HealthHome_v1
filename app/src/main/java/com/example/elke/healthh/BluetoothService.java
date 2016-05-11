@@ -157,7 +157,7 @@ public class BluetoothService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        Log.d(TAG, "BluetoothHDPService is running.");
+        Log.d(TAG, "BluetoothService is running.");
         return START_STICKY;
     }
 

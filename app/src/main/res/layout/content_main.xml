@@ -12,33 +12,40 @@
     tools:showIn="@layout/activity_main"
     android:background="@drawable/net">
 
-<!--   <ImageView
-        android:id="@+id/phone_icon"
-        android:layout_width="match_parent"
-        android:layout_height="86dp"
-        android:src="@drawable/hlog"
-        android:layout_weight="0.13"
-       android:scaleType="center"
-       android:layout_below="@+id/Welcome"
-       android:layout_alignParentLeft="true"
-       android:layout_alignParentStart="true"
-       android:layout_marginTop="89dp" />-->
+    <!--   <ImageView
+            android:id="@+id/phone_icon"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:src="@drawable/hlog"
+            android:layout_weight="0.13"
+           android:scaleType="center"
+           android:layout_below="@+id/Welcome"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true"
+           android:layout_marginTop="89dp" />-->
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome"
-        android:id="@+id/Welcome"
+        android:id="@+id/tv7"
         android:layout_weight="0.14"
         android:textAlignment="center"
         android:typeface="normal"
         android:textIsSelectable="false"
         android:textSize="34dp"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="64dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_centerHorizontal="true" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:typeface="normal"
+        android:textSize="34dp"
+        android:id="@+id/variable"
+        android:layout_below="@+id/tv7"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/bConnect"
@@ -81,8 +88,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:textColor="#fd0000" />
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
